@@ -45,12 +45,16 @@ To set up the project follow these steps:
 
 1. Install experimental allure playwright reporter with the following command:
    `npm i -D experimental-allure-playwright`
+
 2. Install the allure-command line:
    `npm i -D allure-commandline`
+
 3.Run a test:
    `npx playwright test test_cases.spec.js --project chromium --headed --reporter=line,experimental-allure-playwright`
+
 4.Generate a report
    `npx allure generate ./allure-results --clean`
+   
 5.Open the report:
    `npx allure open ./allure-report` - this command will open browser and show you the Allure HTML reporter
 
