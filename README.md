@@ -41,17 +41,20 @@ To set up the project follow these steps:
 3.Check the console for test results.
 4.Review the generated test report for detailed test outcomes.
 
-## Steps to creating the report
+## Steps to creating the Allure report
 
-1. Run the tests
+1. Install experimental allure playwright reporter with the following command:
+   `npm i -D experimental-allure-playwright`
+2. Install the allure-command line:
+   `npm i -D allure-commandline`
+3.Run a test:
+   `npx playwright test test_cases.spec.js --project chromium --headed --reporter=line,experimental-allure-playwright`
+4.Generate a report
+   `npx allure generate ./allure-results --clean`
+5.Open the report:
+   `npx allure open ./allure-report` - this command will open browser and show you the Allure HTML reporter
 
-2. Capture test output
 
-3. Choose a reporting tool
-
-4. Generate the report
-
-5. Include visual elements: Add to the report visual elements, such as charts, graphs, screenshots, or other visuals that illustrate the test results and issues.
 
 
 

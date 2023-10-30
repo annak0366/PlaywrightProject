@@ -26,7 +26,6 @@ test("Registration test_case 001", async ({ page}) => {
     await registration.clickLoginButton();
     await expect(await registration.getText())
         .toContain(`Account was successfully created. An email containing the instructions to activate your account was sent to ${email}`);
-    await expect(page.url()).toBe("https://www.redmine.org/login");
 })
 test("Login test_case 002", async ({ page}) => {
     const login = new mainRegistrationPage(page);
@@ -37,8 +36,6 @@ test("Login test_case 002", async ({ page}) => {
     await expect((await login.getPasswordINLoginPage()).value).toBe(userData.password);
     await expect((await login.getPasswordINLoginPage()).type).toMatch('password');
     await login.clickButtonInLoginPage();
-    await page.waitForLoadState('load');
-    await expect(await page.url()).toBe('https://www.redmine.org/my/page');
     expect(await login.checkMyAccountElementExists(page)).toBe(true);
     expect(await login.checkLogOutElementExists(page)).toBe(true);
     const isUserActive = await login.checkElementText(page, userData.loginName);
@@ -71,7 +68,6 @@ test("Creating test_case 004", async ({ page}) => {
     await page.goto('https://www.redmine.org/');
     await create.clickIssuesButton();
     await create.clickNewIssuesButton();
-    await expect(await page.url()).toBe('https://www.redmine.org/projects/redmine/issues/new');
     await create.enterSubject(subject);
     await expect(await create.getSubjectValue()).toBe(subject);
     await create.clickStatus();

@@ -10,9 +10,10 @@
   "devDependencies": {
     "@playwright/test": "^1.39.0",
     "@types/node": "^20.8.8",
+    "allure-commandline": "^2.24.1",
+    "allure-playwright": "^2.9.2",
+    "experimental-allure-playwright": "^0.0.3",
+    "playwright": "^1.39.0",
     "typescript": "^5.2.2"
-  },
-  "dependencies": {
-    "playwright": "^1.39.0"
   }
 }
