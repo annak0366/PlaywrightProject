@@ -1,8 +1,10 @@
-name: hello-world
+name: playwright-project
 on: push
+
 jobs:
   my-job:
     runs-on: ubuntu-latest
+
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
@@ -10,10 +12,13 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '14'
+        node-version: '16'
 
     - name: Install dependencies
       run: npm install
+
+    - name: Install playwright
+      run: npm install playwright
 
     - name: Run tests
       run: npm run test
