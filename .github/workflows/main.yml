@@ -18,7 +18,7 @@ jobs:
       run: npm install
 
     - name: Install playwright
-      run: npm install playwright
+      run: npx install playwright
 
     - name: Run tests
       run: npm run test
