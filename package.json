@@ -16,10 +16,10 @@
     "@types/node": "^20.8.8",
     "allure-commandline": "^2.24.1",
     "allure-playwright": "2.9.2",
-    "playwright": "^1.39.0",
     "typescript": "^5.2.2"
   },
   "dependencies": {
+    "playwright": "^1.40.0",
     "puppeteer": "^21.5.2",
     "puppeteer-extra": "^3.3.6",
     "puppeteer-extra-plugin-adblocker": "^2.13.6"
