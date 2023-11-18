@@ -1,0 +1,6 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Sat Nov 18 20:57:06 CET 2023","Sat Nov 18 20:57:14 CET 2023","7173","chromium","","","","","Searching test_case 005",""
+"failed","Sat Nov 18 20:56:59 CET 2023","Sat Nov 18 20:57:06 CET 2023","6838","chromium","","","","","Registration test_case 001",""
+"failed","Sat Nov 18 20:56:59 CET 2023","Sat Nov 18 20:57:06 CET 2023","6779","chromium","","","","","Creating test_case 004",""
+"broken","Sat Nov 18 20:56:59 CET 2023","Sat Nov 18 20:57:30 CET 2023","31679","chromium","","","","","Login test_case 002",""
+"broken","Sat Nov 18 20:56:59 CET 2023","Sat Nov 18 20:57:30 CET 2023","31651","chromium","","","","","Filtration test_case 003",""

@@ -3,17 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "hjhj.js",
-  "scripts": {},
+  "scripts": {
+    "test": "npx playwright test --project=chromium",
+    "allure": "allure generate --clean -o allure-report",
+    "allure-open": "allure open"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.39.0",
+    "@playwright/test": "^1.40.0",
     "@types/node": "^20.8.8",
     "allure-commandline": "^2.24.1",
     "allure-playwright": "^2.9.2",
     "experimental-allure-playwright": "^0.0.3",
     "playwright": "^1.39.0",
     "typescript": "^5.2.2"
+  },
+  "dependencies": {
+    "puppeteer": "^21.5.2",
+    "puppeteer-extra": "^3.3.6",
+    "puppeteer-extra-plugin-adblocker": "^2.13.6"
   }
 }
